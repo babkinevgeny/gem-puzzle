@@ -1,0 +1,56 @@
+button {
+  padding: 5px;
+  color: $fogra;
+  font-family: "Montserrat", sans-serif;
+  background-color: $green-sheen;
+  border: 2px solid $metallic-seaweed;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background-color: lighten($green-sheen, 10%);
+  }
+
+  &:disabled {
+    color: darkgray;
+    background-color: lightgray;
+    border-color: darkgray;
+    cursor: not-allowed;
+  }
+
+  &.switch {
+    width: 40px;
+    height: 40px;
+    background-color: $campagne;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: lighten($green-sheen, 10%);
+    }
+
+    &.active {
+      background-color: $metallic-seaweed;
+    }
+
+    &.active:hover {
+      background-color: lighten($metallic-seaweed, 10%);
+    }
+  }
+
+  &.sound {
+    background-image: url("../assets/icons/volume.svg");
+  }
+
+  &.store {
+    background-image: url("../assets/icons/trophy.svg");
+  }
+
+  &.menu {
+    background-image: url("../assets/icons/burger.svg");
+  }
+}

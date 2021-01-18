@@ -1,0 +1,43 @@
+@import "./helpers/index";
+@import "./components/index";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: lighten($campagne, 5%);
+
+  h1 {
+    text-align: center;
+  }
+
+  button.sound {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+button.store {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3000;
+}
